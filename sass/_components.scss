@@ -2,32 +2,33 @@
     border: none;
     padding: 1rem;
     border-radius: 10px;
-
+    font-size: 28px;
+    font-weight: 800;
     width: 100%;
 }
 .dark-orange{
     background-color: var(--orange-dark);
-    box-shadow: 0 5px 0 0 var(--orange-light);
+    box-shadow: 0 8px 0 0 var(--orange-shadow);
 }
 .light-orange{
     background-color: var(--orange-light);
-    box-shadow: 0 5px 0 0 var(--orange-dark);
+    box-shadow: 0 8px 0 0 var(--orange-shadow);
 }
 .dark-blue{
     background-color: var(--blue-dark);
-    box-shadow: 0 5px 0 0 var(--blue-light);
+    box-shadow: 0 8px 0 0 var(--blue-shadow);
 }
 .light-blue{
     background-color: var(--blue-light);
-    box-shadow: 0 5px 0 0 var(--blue-dark);
+    box-shadow: 0 8px 0 0 var(-blue-shadow);
 }
 .light-white{
     background-color: var(--white-light);
-    box-shadow: 0 5px 0 0 var(--white-dark);
+    box-shadow: 0 8px 0 0 var(--white-shadow);
 }
 .dark-white{
     background-color: var(--white-dark);
-    box-shadow: 0 5px 0 0 var(--white-light);
+    box-shadow: 0 8px 0 0 var(---white-shadow);
 }
 [type='reset']{
     width: 50px;
