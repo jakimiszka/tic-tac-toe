@@ -1,0 +1,66 @@
+:root{
+    --grey-dark: hsl(202, 32%, 15%);
+    --grey-light: hsl(199, 35%, 19%);
+    --blue-dark: hsl(178, 60%, 48%);  
+    --blue-light: hsl(178, 75%, 65%);
+    --orange-dark: hsl(39, 88%, 58%);  
+    --orange-light: hsl(39, 100%, 69%);
+    --white-dark: hsl(198, 23%, 72%);  
+    --white-light: hsl(197, 33%, 89%);
+
+    --font-size-1: 9rem;         // 144px
+    --font-size-2: 4rem;         // 64px
+    --font-size-3: 3rem;         // 48px
+    --font-size-4: 2.25rem;      // 36px
+    --font-size-5: 1.75rem;      // 32px
+    --font-size-6: 1.75rem;      // 28px
+    --font-size-7: 1.5rem;       // 24px
+    --font-size-8: 1.25rem;      // 20px
+    --font-size-9: 1rem;         // 16px
+    --font-size-10: .938rem;     // 15px
+    --font-size-11: .875rem;     // 14px
+    --font-size-12: .813rem;     // 13px
+    --font-size-13: .75rem;      // 12px
+
+    --font-size-l-heading: 40px;
+    --font-size-m-heading: 24px;
+    --font-size-s-heading: 20px;
+    --font-size-xs-heading: 16px;
+    --font-size-body: 14px;
+
+    --font-family-outfit: "Outfit", sans-serif;
+
+    --line-height-1: 110%;
+    --line-height-2: 120%;       
+    --line-height-3: 150%;
+    --line-height-4: 16px;     
+    --line-height-5: 15px;  
+
+    --letter-spacing-0: 0%;
+    --letter-spacing-1: -5%;
+
+
+    --spacing-0: 0rem;           // 0px
+    --spacing-10: 0.0625rem;     // 1px
+    --spacing-20: 0.125rem;      // 2px
+    --spacing-50: 0.25rem;       // 4px
+    --spacing-100: 0.5rem;       // 8px
+    --spacing-200: 1rem;         // 16px
+    --spacing-300: 1.5rem;       // 24px
+    --spacing-400: 2rem;         // 32px
+    --spacing-500: 2.5rem;       // 40px
+    --spacing-600: 3rem;         // 48px
+    --spacing-650: 3.5rem;       // 56px
+    --spacing-700: 4rem;         // 64px
+    --spacing-800: 4.5rem;       // 72px    
+    --spacing-1000: 5rem;        // 80px
+    --spacing-1100: 5.5rem;      // 88px
+    --spacing-1200: 6rem;        // 96px
+    --spacing-1300: 6.5rem;      // 104px
+    --spacing-1500: 7.5rem;      // 120px
+    --spacing-1600: 8rem;        // 128px
+    --spacing-1800: 9rem;        // 144px
+    --spacing-2000: 10rem;       // 160px
+    --spacing-2500: 11rem;       // 176px
+    --spacing-2300: 11.5rem;     // 184px
+}
