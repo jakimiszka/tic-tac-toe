@@ -37,11 +37,59 @@
           <button class="btn dark-orange">NEW GAME (vs CPU)</button>
           <button class="btn dark-blue">NEW GAME (vs PLAYER)</button>
         </div>
-      <dib class="board">
+      </div>
+      <div class="board">
+        <div class="board--navigation">
+          <div class="menu--logo logo">
+            <div class="menu--logo--x">
+              <img src="./assets/icon-x.svg" alt="x">
+            </div>
+            <div class="menu--logo--o">
+              <img src="./assets/icon-o.svg" alt="x">
+            </div>
+          </div>
+          <div class="board--navigation__turn">
+            <div class="menu--logo--x">
+              <img src="./assets/icon-x.svg" alt="x">
+            </div>
+            <h4>TURN</h4>
+          </div>
+          <div>
+            <button class="btn light-white" type="reset">
+              <img src="../assets/icon-restart.svg" alt="reset button"/>
+            </button>
+          </div>
+          
         </div>
-        
+        <!-- how to map this into array in JS? -->
+        <div class="board--panels">
+          <div class="panel"></div>
+          <div class="panel"></div>
+          <div class="panel"></div>
+          
+          <div class="panel"></div>
+          <div class="panel"></div>
+          <div class="panel"></div>
 
-      </dib>
+          <div class="panel"></div>
+          <div class="panel"></div>
+          <div class="panel"></div>
+        </div>
+        <div class="board--results">
+          <div class="result light-blue">
+            <p class="result--player">X (YOU)</p>
+            <p class="result--score">14</p>
+          </div>
+          <div class="result light-white">
+            <p class="result--player">X (YOU)</p>
+            <p class="result--score">14</p>
+          </div>
+          <div class="result light-orange">
+            <p class="result--player">X (YOU)</p>
+            <p class="result--score">14</p>
+          </div>
+        </div>
+      </div>
   </div>
 <!-- 
   <button class="btn light-orange">BUTTON 1</button>
