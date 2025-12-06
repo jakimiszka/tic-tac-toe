@@ -13,6 +13,17 @@
     --blue-shadow: #118C87;
     --white-shadow: #6B8997;
 
+    [data-selected='true']{
+        --selected-background: var(--white-dark);
+        --selected-svg-color: brightness(0) saturate(100%) invert(13%) sepia(12%) saturate(1566%) hue-rotate(155deg) brightness(95%) contrast(90%);
+    }
+
+    [data-selected='false']{
+        --selected-background: var(--grey-dark);
+        --selected-svg-color: brightness(0) saturate(100%) invert(79%) sepia(8%) saturate(1029%) hue-rotate(157deg) brightness(91%) contrast(86%);
+    }
+
+
     --font-size-1: 9rem;         // 144px
     --font-size-2: 4rem;         // 64px
     --font-size-3: 3rem;         // 48px

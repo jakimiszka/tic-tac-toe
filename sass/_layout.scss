@@ -103,16 +103,18 @@ h3,h4{
                 }
             }
             &--x{
+                border-radius: 10px;
+                background-color: var(--selected-background);
                  img{
-                    filter: brightness(0) saturate(100%) invert(79%) sepia(8%) saturate(1029%) hue-rotate(157deg) brightness(91%) contrast(86%);
+                    filter: var(--selected-svg-color);
                 }
             }
 
             &--o{
                 border-radius: 10px;
-                background-color: var(--white-dark);
+                background-color: var(--selected-background);
                 img{
-                    filter: brightness(0) saturate(100%) invert(13%) sepia(12%) saturate(1566%) hue-rotate(155deg) brightness(95%) contrast(90%);
+                    filter: var(--selected-svg-color);
                 }
             }
         }
