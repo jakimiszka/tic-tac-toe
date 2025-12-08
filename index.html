@@ -34,7 +34,7 @@
   <div id="container">
       <div class="menu">
         <div class="menu--logo">
-          <div class="menu--logo--x">
+            <div class="menu--logo--x">
               <img src="./assets/icon-x.svg" alt="x">
             </div>
             <div class="menu--logo--o">
@@ -44,32 +44,32 @@
         <div class="menu--turn">
           <h3>PICK PLAYERS 1's MARK</h3>
           <div class="menu--turn__mark">
-            <div class="menu--turn__mark--x" data-selected="true">
+            <div class="menu--turn__mark--x" data-selected="false">
               <img src="./assets/icon-x.svg" alt="x">
             </div>
-            <div class="menu--turn__mark--o" data-selected="false">
+            <div class="menu--turn__mark--o" data-selected="true">
               <img src="./assets/icon-o.svg" alt="o">
             </div>
           </div>
           <h4>REMEMBER : X GOES FIRST</h4>
         </div>
         <div class="menu--decision">
-          <button class="btn dark-orange">NEW GAME (vs CPU)</button>
+          <button class="btn dark-orange" id="newGameCPU">NEW GAME (vs CPU)</button>
           <button class="btn dark-blue">NEW GAME (vs PLAYER)</button>
         </div>
       </div>
       <div class="board" data-game="inactive">
         <div class="board--navigation">
           <div class="board--navigation__menu menu--logo logo">
-            <div class="menu--logo--x">
+            <div class="board--navigation__menu--x">
               <img src="./assets/icon-x.svg" alt="x">
             </div>
-            <div class="menu--logo--o">
+            <div class="board--navigation__menu--o">
               <img src="./assets/icon-o.svg" alt="x">
             </div>
           </div>
           <div class="board--navigation__turn">
-            <div class="menu--logo--x">
+            <div class="board--navigation__turn--image">
               <img src="./assets/icon-x.svg" alt="x">
             </div>
             <h4>TURN</h4>
@@ -83,17 +83,17 @@
         </div>
         <!-- how to map this into array in JS? -->
         <div class="board--panels">
-          <div class="panel">o</div>
-          <div class="panel">o</div>
+          <div class="panel"></div>
+          <div class="panel"></div>
           <div class="panel"></div>
           
           <div class="panel"></div>
-          <div class="panel">0</div>
+          <div class="panel"></div>
           <div class="panel"></div>
 
           <div class="panel"></div>
           <div class="panel"></div>
-          <div class="panel">0</div>
+          <div class="panel"></div>
         </div>
         <div class="board--results">
           <div class="result dark-blue">
@@ -111,6 +111,6 @@
         </div>
       </div>
   </div>
-  <script defer src="./script.js"></script>
+  <script type="module" defer src="./script.js"></script>
 </body>
 </html>
