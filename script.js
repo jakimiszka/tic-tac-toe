@@ -5,6 +5,7 @@ const oButton = document.querySelector('.menu--turn__mark--o');
 const newGameCPU = document.querySelector('#newGameCPU');
 const menu = document.querySelector('.menu');
 const board = document.querySelector('.board');
+const playerTurnImage = document.querySelector('.board--navigation__turn--image img');
 
 const game = new Game();
 const pannels = document.querySelectorAll('.board--panels .panel');
@@ -16,6 +17,21 @@ pannels.forEach((panel, index) => {
         }
         panel.textContent = game.currentPlayer;
         game.board[Math.floor(index / 3)][index % 3] = game.currentPlayer;
+        const result = game.checkWin();
+        if(result){
+            if(result === 'Draw'){
+                alert("It's a draw!");
+            } else {
+                alert(`Player ${result} wins!`);
+            }
+        } else {
+            const player = game.togglePlayer();
+            if(player === 'O' && oButton.dataset.selected === 'true'){
+                playerTurnImage.src = './assets/icon-o.svg';
+            }else{
+                playerTurnImage.src = './assets/icon-x.svg';        
+            }
+        }
     });
 });
 
