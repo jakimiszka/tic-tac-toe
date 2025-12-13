@@ -6,12 +6,32 @@ class Game{
             ['', '', '']
         ];
         this.currentPlayer = 'X';
+        this.player = '';
+        this.cpu = '';
+        this.isCPUPlaying = false;
         this.isGameOver = false;
         this.gameStats = {
             XWins: 0,
             OWins: 0,
             Draws: 0
         };
+    }
+
+    selectPlayer(symbol){
+        this.currentPlayer = symbol;
+    }
+
+    updateScore(){
+        const winner = this.checkWin();
+        console.log(winner);
+        if(winner === 'X'){
+            this.gameStats.XWins += 1;
+        } else if(winner === 'O'){
+            this.gameStats.OWins += 1;
+        } else if(winner === 'Draw'){
+            this.gameStats.Draws += 1;
+        }
+        //localStorage.setItem('gameStats', JSON.stringify(this.gameStats));
     }
 
     preserveSession(){
@@ -34,6 +54,28 @@ class Game{
     togglePlayer(){
         this.currentPlayer = this.currentPlayer === 'X' ? 'O' : 'X';
         return this.currentPlayer;
+    }
+
+    cpuMove(){
+        if(this.isGameOver) return;
+
+        let availableMoves = [];
+        for(let i = 0; i < 3; i++){
+            for(let j = 0; j < 3; j++){
+                if(this.board[i][j] === ''){
+                    availableMoves.push([i, j]);
+                }
+            }
+        }
+
+        if(availableMoves.length === 0) return;
+
+        const randomIndex = Math.floor(Math.random() * availableMoves.length);
+        const [row, col] = availableMoves[randomIndex];
+        this.board[row][col] = this.currentPlayer;
+
+        const result = this.checkWin();
+        return {result, row, col, mark: this.currentPlayer};
     }
 
     checkWin(){

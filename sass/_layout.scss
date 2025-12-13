@@ -239,13 +239,27 @@ h3,h4{
     &--info{
          display: flex;
          flex-direction: row;
+         align-items: center;
+         justify-content: center;
+         gap: 1rem;
+         margin-bottom: 1rem;;
     }
 
-    &--decision{
-        
-         display: flex;
-         flex-direction: row;
+    &--decision, &--restart{
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+
+        button{
+            width: 100%;
+            height: auto;
+            padding: 1rem;
+        }
     }
+    &--restart{
+        display: none;
+    }   
 }   
 
 

@@ -23,11 +23,13 @@
         <h2>takes the round</h2>
       </div>
       <div class="banner--decision">
-        <button class="btn light-white">Quit</button>
-        <button class="btn light-orange">Next round</button>
+        <button class="btn light-white banner_quit">Quit</button>
+        <button class="btn light-orange banner_next">Next round</button>
       </div>
-        <!-- <button>No, cancel</button>
-        <button>Yes, restart</button> -->
+      <div class="banner--restart">
+        <button class="btn light-white">No, cancel</button>
+        <button class="btn light-orange">Yes, restart</button>
+      </div> 
   </div>
   <div id="container">
       <div class="menu">
@@ -53,7 +55,7 @@
         </div>
         <div class="menu--decision">
           <button class="btn dark-orange" id="newGameCPU">NEW GAME (vs CPU)</button>
-          <button class="btn dark-blue">NEW GAME (vs PLAYER)</button>
+          <button class="btn dark-blue" id="newGamePlayer">NEW GAME (vs PLAYER)</button>
         </div>
       </div>
       <div class="board" data-game="inactive">
@@ -73,7 +75,7 @@
             <h4>TURN</h4>
           </div>
           <div class="board--navigation__restart">
-            <button class=" btn light-white" type="reset">
+            <button class="btn light-white" type="reset">
               <img src="../assets/icon-restart.svg" alt="reset button"/>
             </button>
           </div>
@@ -95,15 +97,15 @@
         <div class="board--results">
           <div class="result dark-blue">
             <p class="result--player">X (YOU)</p>
-            <p class="result--score">14</p>
+            <p class="result--score firstPlayer">0</p>
           </div>
           <div class="result light-white">
             <p class="result--player">TIES</p>
-            <p class="result--score">14</p>
+            <p class="result--score drawScore">0</p>
           </div>
           <div class="result light-orange">
             <p class="result--player">O (CPU)</p>
-            <p class="result--score">14</p>
+            <p class="result--score secondPlayer">0</p>
           </div>
         </div>
       </div>
